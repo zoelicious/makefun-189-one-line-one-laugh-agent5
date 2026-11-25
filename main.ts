@@ -10,4 +10,5 @@ const line = "My smart fridge texted me 'we need to talk' and now I'm afraid my 
 
 const outDir = process.env.MAKEFUN_OUTPUT_DIR || "/output";
 mkdirSync(outDir, { recursive: true });
+// The entry file carries just this one line, so nothing extra lands in the submission.
 writeFileSync(join(outDir, "entry.txt"), line + "\n", "utf8");
